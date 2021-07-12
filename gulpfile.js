@@ -120,4 +120,4 @@ gulp.task("prod", () => {
         .pipe(gulp.dest(dist + '/css'));
 });
 
-gulp.task("default", gulp.parallel("watch", "build"));
+gulp.task("def`ault", gulp.parallel("watch", "build"));
