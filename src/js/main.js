@@ -87,9 +87,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (t.total <= 0) {
             clearInterval(timeInterval);
-        }
+            }
         }
     }
 
     setClock('.timer', deadline);
+
+    // Modal window
+
+    const modalTrigger = document.querySelector('[data-modal]'),
+          modal = document.querySelector('.modal'),
+          modalCloseBtn = document.querySelector('[data-close]');
+    
+    modalTrigger.addEventListener('click', () => {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+    });
+
+
 });
