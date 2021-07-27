@@ -3404,6 +3404,12 @@ window.addEventListener('DOMContentLoaded', function () {
       closeModal();
     }, 4000);
   }
+
+  fetch('http://localhost:3000/menu').then(function (data) {
+    return data.json();
+  }).then(function (res) {
+    return console.log(res);
+  });
 });
 
 /***/ })
