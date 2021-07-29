@@ -22,3 +22,12 @@
         text-align: right;
     }
 }
+.show {
+    display: block;
+    overflow: visible;
+}
+
+.hide {
+    display: none;
+    overflow: hidden;
+}

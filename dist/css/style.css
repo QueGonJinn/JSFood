@@ -163,6 +163,16 @@ a {
   width: 100%;
 }
 
+.show {
+  display: block;
+  overflow: visible;
+}
+
+.hide {
+  display: none;
+  overflow: hidden;
+}
+
 .preview {
   padding: 28px 0 100px 0;
   position: relative;
@@ -592,6 +602,16 @@ a {
 }
 .footer .call {
   text-align: right;
+}
+
+.show {
+  display: block;
+  overflow: visible;
+}
+
+.hide {
+  display: none;
+  overflow: hidden;
 }
 
 .modal {
